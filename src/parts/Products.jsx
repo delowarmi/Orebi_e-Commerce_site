@@ -7,7 +7,6 @@ import product3 from '../assets/pro11.png'
 import product4 from '../assets/pro12.png'
 import product5 from '../assets/pro7.png'
 import Container from '../components/Container'
-import Flex from '../components/Flex'
 import PrevArrow from '../components/PrevArrow'
 import NextArrow from '../components/NextArrow'
 import "slick-carousel/slick/slick.css";
@@ -102,10 +101,7 @@ const Products = () => {
         </div>
       </Slider>
       </Container>
-      
-      
       </div>
-      
   )
 }
 

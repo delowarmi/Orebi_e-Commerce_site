@@ -31,9 +31,7 @@ const [hidden, setHidden] = useState(false);
                  )}
                 </Flex>
         </OutsideClickHandler>
-      
     </div>
   )
 }
-
 export default Category

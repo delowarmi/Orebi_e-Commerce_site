@@ -13,7 +13,8 @@ const Product = ({badge, imgSrc, para, para2, para3, para4, para5, para6}) => {
     <>
     <div className='relative'>
     <Image ImgSrc={imgSrc} className={'w-full'}/>
-    <Badge text={badge} className={'absolute top-4  left-5'}/>
+    <Badge text={badge} className={'absolute top-4  left-5 '}/>
+    
     </div>
     <div className='bg-white p-5 invisible group-hover:visible absolute w-full top-[43%] left-0'>
       <Flex className={'justify-end gap-x-3 items-center pb-2'}>

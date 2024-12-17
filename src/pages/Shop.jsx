@@ -18,17 +18,119 @@ import pic9 from '../assets/pro9.png'
 import pic10 from '../assets/pro10.png'
 import pic11 from '../assets/pro11.png'
 import pic12 from '../assets/pro12.png'
-
+import { useState} from 'react'
+import OutsideClickHandler from 'react-outside-click-handler';
 const Shop = () => {
+  const [hidden, setHidden] = useState(false);
   return (
     <div className='pt-[100px] pb-[50px]'>
       <Container>
         <Heading as={'h3'} text={'Products'} className=" font-dm text-[40px] font-bold"/>
         <Heading as={'p'} text={'Home  >  Products'} className=" font-dm text-[16px] font-regular text-InfoColor pb-[100px]"/>
         <Flex>
-          <div className="w-[24%]">
-            <Heading as={'h3'} text={'Shop by Category'} className='font-dm text-[20px] font-bold'/>
-          </div>
+        <div className='w-[24%] relative'>
+      <div className='w-full relative'>
+        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+                <Flex className={'items-center'}>
+                
+                <div onClick={() => setHidden(!hidden)}>
+                <Heading as={'h3'} text={'Shop by Category'} className='font-dm text-[20px] pl-2 font-bold file: cursor-pointer relative'onClick={() => setHidden(!hidden)} />
+                </div>
+                {hidden && (
+                  <div className='bg-white p-3 w-full absolute left-[0px] top-[30px] rounded-md'>
+                      <ul className='font-dms text-[16px] text-TextColor'>
+                        <li>
+                           <Heading as={'p'} text={'Category 1'}className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Category 2'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Category 3'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Category 4'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Category 5'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                        </li>
+                      </ul>  
+                  </div>
+                 )}
+                </Flex>
+        </OutsideClickHandler>
+    </div>
+    <div className='w-full relative top-[320px]'>
+        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+                <Flex className={'items-center'}>
+                
+                <div onClick={() => setHidden(!hidden)}>
+                <Heading as={'h3'} text={'Shop by Color'} className='font-dm text-[20px] pl-2 font-bold file: cursor-pointer relative'onClick={() => setHidden(!hidden)} />
+                </div>
+                {hidden && (
+                  <div className='bg-white p-3 w-full absolute left-[0px] top-[30px] rounded-md'>
+                      <ul className='font-dms text-[16px] text-TextColor'>
+                        <li>
+                          
+                            <input type="color" value="#000000" className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>Color 1 <br/><br/>
+                            <input type="color" value="#e8a317" className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>Color 2 <br/><br/>
+                            <input type="color" value="#008000" className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>Color 3 <br/><br/>
+                            <input type="color" value="#ffffc2" className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>Color 4 <br/><br/>
+                            <input type="color" value="#ff0000" className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>Color 5
+                            
+                        </li>
+                      </ul>  
+                  </div>
+                 )}
+                </Flex>
+        </OutsideClickHandler>
+    </div>
+    <div className='w-full relative top-[620px]'>
+        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+                <Flex className={'items-center'}>
+                
+                <div onClick={() => setHidden(!hidden)}>
+                <Heading as={'h3'} text={'Shop by Brand'} className='font-dm text-[20px] pl-2 font-bold file: cursor-pointer relative'onClick={() => setHidden(!hidden)} />
+                </div>
+                {hidden && (
+                  <div className='bg-white p-3 w-full absolute left-[0px] top-[30px] rounded-md'>
+                      <ul className='font-dms text-[16px] text-TextColor'>
+                        <li>
+                           <Heading as={'p'} text={'Brand 1'}className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Brand 2'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Brand 3'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Brand 4'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'Brand 5'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                        </li>
+                      </ul>  
+                  </div>
+                 )}
+                </Flex>
+        </OutsideClickHandler>
+    </div>
+    <div className='w-full relative top-[950px]'>
+        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+                <Flex className={'items-center'}>
+                
+                <div onClick={() => setHidden(!hidden)}>
+                <Heading as={'h3'} text={'Shop by Price'} className='font-dm text-[20px] pl-2 font-bold file: cursor-pointer relative'onClick={() => setHidden(!hidden)} />
+                </div>
+                {hidden && (
+                  <div className='bg-white p-3 w-full absolute left-[0px] top-[30px] rounded-md'>
+                      <ul className='font-dms text-[16px] text-TextColor'>
+                        <li>
+                           <Heading as={'p'} text={'$0.00 - $9.99'}className='border-b pb-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'$10.00 - $19.99'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'$20.00 - $29.99'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'$30.00 - $39.99'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                           <Heading as={'p'} text={'$40.00 - $69.99'}className='border-b py-3 bottom-BorderInfoColor font-dm text-navColor'/>
+                        </li>
+                      </ul>  
+                  </div>
+                 )}
+                </Flex>
+        </OutsideClickHandler>
+    </div>
+  </div>
+
+
+
+
+
+
+          
           <div className="w-[75%]">
             <Flex>
               <div className="w-[50%]">
@@ -55,6 +157,7 @@ const Shop = () => {
               
             </Flex>
             <Flex className={'justify-between pt-8'}>
+    
               <div className="w-[33%] relative group px-2">
                 <Product 
                 imgSrc={pic1}
@@ -66,7 +169,7 @@ const Shop = () => {
                 para5={'$44.00'}
                 />
                 </div>
-                <div className="w-[33%] relative group px-2">
+                <div className="w-[24%] relative group px-2">
                 <Product 
                 imgSrc={pic2}
                 badge={'New'}
@@ -77,7 +180,7 @@ const Shop = () => {
                 para5={'$44.00'}
                 />
                 </div>
-                <div className="w-[33%] relative group px-2">
+                <div className="w-[24%] relative group px-2">
                 <Product 
                 imgSrc={pic3}
                 badge={'New'}
@@ -195,6 +298,7 @@ const Shop = () => {
                 </div> 
             </Flex>
           </div>
+          
   
         </Flex>
       </Container>

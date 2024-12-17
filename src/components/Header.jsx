@@ -7,7 +7,7 @@ import User from './User';
 
 const Header = () => {
   return (
-    <div className='bg-subnavColor py-5'>
+    <div className='bg-subnavColor py-5 '>
       <Container>
       <Flex>
         <div className="w-[20%] pt-2">
