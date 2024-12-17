@@ -39,14 +39,14 @@ const Shop = () => {
                   <div className="w-[60%] relative ml-[170px]">
                     <Flex className={'gap-x-3'}>
                       <Heading as={'p'} text={'Sort by:'} className='font-dm font-regular text-[16px] text-InfoColor '/>
-                      <input type="text"className='className =  bg-white  w-[100px]'placeholder='Featured' />
+                      <input type="text"className='border border-InfoColor  bg-white  w-[100px]'placeholder='Featured' />
                       <FaSortDown className='absolute right-2 top-1/3 -translate-y-1/2'/>
                     </Flex>
                   </div>
                   <div className="w-[40%] relative">
                   <Flex className={'gap-x-3'}>
                       <Heading as={'p'} text={'Show:'} className='font-dm font-regular text-[16px] text-InfoColor '/>
-                      <input type="text"className='className =  bg-white  w-[100px]'placeholder='36' />
+                      <input type="text"className='border border-InfoColor bg-white  w-[100px]'placeholder='36' />
                       <FaSortDown className='absolute right-4 top-1/3 -translate-y-1/2'/>
                     </Flex>
                   </div>

@@ -17,21 +17,21 @@ const Signup = () => {
             <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>First Name</b></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter First Name" name="uname"required></input>
+                  <input type="text" className='border border-InfoColor  = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter First Name" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Last Name</b ></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Last Name" name="uname" required></input>
+                  <input type="text" className='border border-InfoColor  p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Last Name" name="uname" required></input>
                   </div>
             </Flex>
             <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Email address</b></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Email address" name="uname"required></input>
+                  <input type="text" className='border border-InfoColor  p-3 bg-white rounded-lg w-[300px]' placeholder="Email address" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Telephone</b ></label> <br/>
-                  <input type="number" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Telephone" name="uname" required></input>
+                  <input type="number" className='border border-InfoColor  p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Telephone" name="uname" required></input>
                   </div>
             </Flex>
         <div > 
@@ -39,31 +39,31 @@ const Signup = () => {
                <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Address 1</b></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Address" name="uname"required></input>
+                  <input type="text" className='border border-InfoColor  p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Address" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Address 2</b ></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Address2" name="uname" required></input>
+                  <input type="text" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Address2" name="uname" required></input>
                   </div>
             </Flex>
             <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>City</b></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter City" name="uname"required></input>
+                  <input type="text" className='border border-InfoColor  p-3 bg-white rounded-lg w-[300px]' placeholder="Enter City" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Post Code</b ></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Post-Code" name="uname" required></input>
+                  <input type="text" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Post-Code" name="uname" required></input>
                   </div>
             </Flex>
             <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Country</b></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Country" name="uname"required></input>
+                  <input type="text" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Country" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Region/State</b ></label> <br/>
-                  <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Region" name="uname" required></input>
+                  <input type="text" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Region" name="uname" required></input>
                   </div>
             </Flex>
         </div>
@@ -72,11 +72,11 @@ const Signup = () => {
         <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Password</b></label> <br/>
-                  <input type="password" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Password" name="uname"required></input>
+                  <input type="password" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Password" name="uname"required></input>
                   </div>
                   <div className='pt-[50px]'>
                   <label for="uname"><b className='pl-3'>Repeat Password</b ></label> <br/>
-                  <input type="password" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Re-Password" name="uname" required></input>
+                  <input type="password" className='border border-InfoColor p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Re-Password" name="uname" required></input>
                   </div>
         </Flex>    
         </div>

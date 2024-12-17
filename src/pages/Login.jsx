@@ -17,11 +17,11 @@ const Login = () => {
           <Flex className={'gap-x-6 border-b pb-3 bottom-BorderInfoColor'}>
                 <div className='pt-[50px]'>
                 <label for="uname"><b className='pl-3'>Email address</b></label> <br/>
-                <input type="text" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Email address" name="uname"required></input>
+                <input type="text" className='border border-InfoColor className = p-3 bg-white rounded-lg w-[300px]' placeholder="Email address" name="uname"required></input>
                 </div>
                 <div className='pt-[50px]'>
                 <label for="uname"><b className='pl-3'>Password</b ></label> <br/>
-                <input type="password" className='className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Password" name="uname" required></input>
+                <input type="password" className='border border-InfoColor className = p-3 bg-white rounded-lg w-[300px]' placeholder="Enter Password" name="uname" required></input>
                 </div>
           </Flex>
            <button className='border border-navColor py-[10px] px-[60px] mt-[40px]'>Login</button>

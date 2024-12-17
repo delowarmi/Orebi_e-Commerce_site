@@ -14,7 +14,7 @@ const Header = () => {
         <Category/>
         </div>
         <div className="w-[60%] relative">
-          <input type="text"className='className = p-3 bg-white rounded-lg w-full'placeholder='Search Products' />
+          <input type="text"className='className = p-3 bg-white rounded-lg w-full border border-InfoColor'placeholder='Search Products' />
           <FaSearch className='absolute right-4 top-1/2 -translate-y-1/2'/>
         </div>
         <div className="w-[20%] pt-2">
