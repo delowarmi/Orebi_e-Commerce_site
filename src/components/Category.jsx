@@ -9,7 +9,7 @@ const Category = () => {
 
 const [hidden, setHidden] = useState(false);
   return (
-    <div>
+    <div className='w-full relative'>
         <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
                 <Flex className={'items-center'}>
                 <HiMenuAlt2 className='cursor-pointer' onClick={() => setHidden(!hidden)} />
@@ -17,7 +17,7 @@ const [hidden, setHidden] = useState(false);
                 <Heading as={'h3'} text={'Shop by Category'} className='font-dms text-[16px] pl-2 text-navHColor file:      cursor-pointer relative'/>
                 </div>
                 {hidden && (
-                  <div className='bg-white p-4 w-[230px] absolute left-[130px] top-[150px] rounded-md'>
+                  <div className='bg-white p-4 w-[230px] absolute left-[0px] top-[30px] rounded-md'>
                       <ul className='font-dms text-[16px] text-TextColor'>
                         <li>
                            <Heading as={'p'} text={'Category 1'}className='border-b pb-5 bottom-BorderInfoColor font-dm text-navColor'/>

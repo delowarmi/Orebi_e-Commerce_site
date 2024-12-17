@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from '../components/Image'
 import ErrorAni from '../assets/error.gif'
-import Container from '../components/Container'
 import Flex from '../components/Flex'
 import { Link } from 'react-router-dom'
 
