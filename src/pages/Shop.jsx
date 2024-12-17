@@ -169,7 +169,7 @@ const Shop = () => {
                 para5={'$44.00'}
                 />
                 </div>
-                <div className="w-[24%] relative group px-2">
+                <div className="w-[33%] relative group px-2">
                 <Product 
                 imgSrc={pic2}
                 badge={'New'}
@@ -180,7 +180,7 @@ const Shop = () => {
                 para5={'$44.00'}
                 />
                 </div>
-                <div className="w-[24%] relative group px-2">
+                <div className="w-[33%] relative group px-2">
                 <Product 
                 imgSrc={pic3}
                 badge={'New'}
