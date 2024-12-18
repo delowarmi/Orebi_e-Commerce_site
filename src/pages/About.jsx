@@ -17,12 +17,12 @@ const About = () => {
           <div className="w-[49%] relative">
             <AboutProduct
             imgSrc={prod1}
-            badge={'New'}/>
+            badge={'Our Brands'}/>
           </div>
           <div className="w-[49%] relative">
             <AboutProduct
             imgSrc={prod2}
-            badge={'New'}/>
+            badge={'Our Stores'}/>
           </div>
         </Flex>
         <Heading as={'p'} text={'Orebi is one of the world’s leading ecommerce brands and is internationally recognized for celebrating the essence of classic Worldwide cool looking style.'} className='font-dm font-regular text-[30px] text-InfoColor pt-[70px]'/>

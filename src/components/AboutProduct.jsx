@@ -6,7 +6,7 @@ const AboutProduct = ({imgSrc,badge}) => {
   return (
     <>
      <Image ImgSrc={imgSrc} className={'w-full'}/>
-     <Badge text={badge} className={'absolute bottom-10 left-1/2 -translate-x-1/2 py-5 px-16'}/>
+     <Badge badgeName={badge} className={'absolute bottom-10 left-1/2 -translate-x-1/2   '}/>
     </>
   )
 }

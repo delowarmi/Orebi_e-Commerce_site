@@ -12,6 +12,7 @@ import NextArrow from '../components/NextArrow'
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import Heading from '../components/Heading'
+import Badge from '../components/Badge'
 const Products = () => {
         var settings = {
                 infinite: true,
@@ -39,11 +40,12 @@ const Products = () => {
         para5={'$44.00'}
         para6={'Black'}
         />
+        
         </div>
         <div className='w-[24%] relative group px-2'>
         <Product
         imgSrc={product1}
-        badgeName={'New'}
+        badge={'10'}
         para={'Add to Wish List'}
         para2={'Compare'}
         para3={'Add to Cart'}
@@ -55,7 +57,7 @@ const Products = () => {
         <div className='w-[24%] relative group px-2'>
         <Product
         imgSrc={product2}
-        badgeName={'New'}
+        badge={'New'}
         para={'Add to Wish List'}
         para2={'Compare'}
         para3={'Add to Cart'}
@@ -67,7 +69,7 @@ const Products = () => {
         <div className='w-[24%] relative group px-2'>
         <Product 
         imgSrc={product3}
-        badgeName={'New'}
+        badge={'20%'}
         para={'Add to Wish List'}
         para2={'Compare'}
         para3={'Add to Cart'}
@@ -79,7 +81,7 @@ const Products = () => {
         <div className='w-[24%] relative group px-2'>
         <Product 
         imgSrc={product4}
-        badgeName={'New'}
+        badge={'New'}
         para={'Add to Wish List'}
         para2={'Compare'}
         para3={'Add to Cart'}
@@ -90,7 +92,7 @@ const Products = () => {
         <div className='w-[24%] relative group px-2'>
         <Product 
         imgSrc={product5}
-        badgeName={'New'}
+        badge={'15%'}
         para={'Add to Wish List'}
         para2={'Compare'}
         para3={'Add to Cart'}

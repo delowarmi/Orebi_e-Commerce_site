@@ -27,7 +27,7 @@ const Bestsell = () => {
                 <div className="w-[24%]">
                         <Product
                         imgSrc={product2}
-                        badge={'New'}
+                        badge={'-10%'}
                         />
                         <Flex className={'justify-between'}>
                             <Heading as={'h3'} text={'Basic Crew Neck Tee'} className='font-dm font-bold text-[20px] '/>
@@ -49,7 +49,7 @@ const Bestsell = () => {
                 <div className="w-[24%]">
                         <Product
                         imgSrc={product4}
-                        badge={'New'}
+                        badge={'-10%'}
                         />
                         <Flex className={'justify-between'}>
                             <Heading as={'h3'} text={'Basic Crew Neck Tee'} className='font-dm font-bold text-[20px] '/>

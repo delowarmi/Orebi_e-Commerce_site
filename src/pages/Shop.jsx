@@ -5,21 +5,22 @@ import Heading from '../components/Heading'
 import { MdWindow } from "react-icons/md";
 import { AiOutlineBars } from "react-icons/ai";
 import { FaSortDown } from "react-icons/fa";
-import Product from '../parts/Product';
-import pic1 from '../assets/pro1.jpg'
-import pic2 from '../assets/pro2.png'
-import pic3 from '../assets/pro3.png'
-import pic4 from '../assets/pro4.png'
-import pic5 from '../assets/pro5.png'
-import pic6 from '../assets/pro6.png'
-import pic7 from '../assets/pro7.png'
-import pic8 from '../assets/pro8.png'
-import pic9 from '../assets/pro9.png'
-import pic10 from '../assets/pro10.png'
-import pic11 from '../assets/pro11.png'
-import pic12 from '../assets/pro12.png'
+// import Product from '../parts/Product';
+// import pic1 from '../assets/pro1.jpg'
+// import pic2 from '../assets/pro2.png'
+// import pic3 from '../assets/pro3.png'
+// import pic4 from '../assets/pro4.png'
+// import pic5 from '../assets/pro5.png'
+// import pic6 from '../assets/pro6.png'
+// import pic7 from '../assets/pro7.png'
+// import pic8 from '../assets/pro8.png'
+// import pic9 from '../assets/pro9.png'
+// import pic10 from '../assets/pro10.png'
+// import pic11 from '../assets/pro11.png'
+// import pic12 from '../assets/pro12.png'
 import { useState} from 'react'
 import OutsideClickHandler from 'react-outside-click-handler';
+// import Pagination from '../components/Pagination';
 const Shop = () => {
   const [hidden, setHidden] = useState(false);
   return (
@@ -30,7 +31,7 @@ const Shop = () => {
         <Flex>
         <div className='w-[24%] relative'>
       <div className='w-full relative'>
-        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+        <OutsideClickHandler onOutsdeClick ={() => { setHidden(false); }} >
                 <Flex className={'items-center'}>
                 
                 <div onClick={() => setHidden(!hidden)}>
@@ -53,7 +54,7 @@ const Shop = () => {
         </OutsideClickHandler>
     </div>
     <div className='w-full relative top-[320px]'>
-        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+        <OutsideClickHandler onOutsdeClick ={() => { setHidden(false); }} >
                 <Flex className={'items-center'}>
                 
                 <div onClick={() => setHidden(!hidden)}>
@@ -78,7 +79,7 @@ const Shop = () => {
         </OutsideClickHandler>
     </div>
     <div className='w-full relative top-[620px]'>
-        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+        <OutsideClickHandler onOutsdeClick ={() => { setHidden(false); }} >
                 <Flex className={'items-center'}>
                 
                 <div onClick={() => setHidden(!hidden)}>
@@ -100,8 +101,9 @@ const Shop = () => {
                 </Flex>
         </OutsideClickHandler>
     </div>
+    <Flex>
     <div className='w-full relative top-[950px]'>
-        <OutsideClickHandler onOutsideClick ={() => { setHidden(false); }} >
+        <OutsideClickHandler onOutsdeClick ={() => { setHidden(false); }} >
                 <Flex className={'items-center'}>
                 
                 <div onClick={() => setHidden(!hidden)}>
@@ -123,15 +125,12 @@ const Shop = () => {
                 </Flex>
         </OutsideClickHandler>
     </div>
+    </Flex>
   </div>
 
-
-
-
-
-
-          
           <div className="w-[75%]">
+          
+
             <Flex>
               <div className="w-[50%]">
                <Flex><MdWindow className='p-1 text-[32px] '/> <AiOutlineBars className='p-1 text-[32px] '/> </Flex>
@@ -156,147 +155,8 @@ const Shop = () => {
               </div>
               
             </Flex>
-            <Flex className={'justify-between pt-8'}>
-    
-              <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic1}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic2}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic3}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div> 
-            </Flex>
-            <Flex className={'justify-between pt-8'}>
-              <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic4}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic5}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic6}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div> 
-            </Flex>
-            <Flex className={'justify-between pt-8'}>
-              <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic7}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic8}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic9}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div> 
-            </Flex>
-            <Flex className={'justify-between pt-8'}>
-              <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic10}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic11}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div>
-                <div className="w-[33%] relative group px-2">
-                <Product 
-                imgSrc={pic12}
-                badge={'New'}
-                para={'Add to Wish List'}
-                para2={'Compare'}
-                para3={'Add to Cart'}
-                para4={'Basic Crew Neck Tee'}
-                para5={'$44.00'}
-                />
-                </div> 
-            </Flex>
+            
+            
           </div>
           
   
